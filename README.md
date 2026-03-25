@@ -163,7 +163,7 @@ Tamper detection uses two signals combined:
 - **Spike detection**: sudden large change in frame difference vs. rolling history
 - **Blackout detection**: dramatic drop in mean frame brightness
 
-No YOLO inference is needed — this runs at full frame rate even if the model is loading.
+No YOLO inference is needed.
 
 ### Technologies Used
 
