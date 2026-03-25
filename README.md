@@ -165,7 +165,7 @@ Tamper detection uses two signals combined:
 
 No YOLO inference is needed — this runs at full frame rate even if the model is loading.
 
-### Technologies
+### Technologies Used
 
 | Library | Role |
 |---|---|
@@ -178,7 +178,7 @@ No YOLO inference is needed — this runs at full frame rate even if the model i
 
 ---
 
-##  Performance Notes
+##  Notes
 
 - **GPU strongly recommended** for real-time inference at 30+ FPS
 - On CPU (laptop): expect 5–15 FPS depending on hardware; use `yolov8n` (nano) for best speed
