@@ -49,8 +49,6 @@ SecuroServ/
 
 ---
 
-##  Quick Start
-
 ### 1. Clone and Install
 
 ```bash
