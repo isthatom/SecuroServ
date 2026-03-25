@@ -79,7 +79,7 @@ Click **▶ START SURVEILLANCE** in the sidebar to begin.
 
 ##  Training Your Own Model
 
-### Step 1 — Prepare your dataset
+### Prepare your dataset
 
 Collect and label images for each behavior class using a tool like [Roboflow](https://roboflow.com) or [LabelImg](https://github.com/HumanSignal/labelImg). Labels must be in **YOLO format** (`.txt` files alongside each image).
 
@@ -97,7 +97,7 @@ Expected class names (configurable):
 - `loitering`
 - `unattended_object`
 
-### Step 2 — Train
+###  Train
 
 ```bash
 python scripts/train.py \
@@ -109,7 +109,7 @@ python scripts/train.py \
 
 Best weights are automatically copied to `models/securoserv.pt`.
 
-### Step 3 — Evaluate
+###  Evaluate
 
 ```bash
 python scripts/evaluate.py \
@@ -117,7 +117,7 @@ python scripts/evaluate.py \
     --data datasets/securoserv/dataset.yaml
 ```
 
-### Step 4 — Use in the App
+### Use in the App
 
 Restart SecuroServ — it will automatically load your custom model from `models/securoserv.pt`.
 
