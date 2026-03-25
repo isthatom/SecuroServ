@@ -155,7 +155,7 @@ behaviors:
 3. **YOLOv8 Inference** — Each frame is run through the model at configurable confidence/IOU thresholds.
 4. **Loitering Tracker** — Person centroids are tracked across frames; extended dwell time triggers a loitering alert.
 5. **Restricted Zone Check** — Point-in-polygon test for each detected person against user-defined zones.
-6. **Alert Manager** — Deduplicates alerts via per-class cooldowns, logs to file, saves snapshots.
+6. **Alert** — Deduplicates alerts via per-class cooldowns, logs to file, saves snapshots.
 
 ### Camera Tamper Detection
 
@@ -181,8 +181,7 @@ No YOLO inference is needed — this runs at full frame rate even if the model i
 ##  Notes
 
 - **GPU strongly recommended** for real-time inference at 30+ FPS
-- On CPU (laptop): expect 5–15 FPS depending on hardware; use `yolov8n` (nano) for best speed
-- Apple Silicon (M1/M2/M3): use `--device mps` during training; MPS inference is supported
+- On CPU (laptop): expect 5–15 FPS depending on hardware; use `yolov8n` (nano) for best speed and heavier models for best accuracy
 - Tamper detection and loitering tracking add near-zero overhead
 
 ---
