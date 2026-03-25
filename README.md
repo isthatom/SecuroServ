@@ -10,19 +10,19 @@ SecuroServ is a YOLOv8-based video surveillance application that uses your lapto
 
 | Capability | Description |
 |---|---|
-| 🥊 **Violence Detection** | Detects physical altercations and aggressive contact |
-| 😮 **Choking / Distress** | Identifies persons in respiratory or physical distress |
-| 📷 **Camera Tampering** | Detects attempts to block, cover, or move the camera |
-| 🚫 **Restricted Area Intrusion** | Alerts when a person enters a defined restricted zone |
-| 🕒 **Loitering Detection** | Flags individuals lingering suspiciously in an area |
-| 🎒 **Unattended Objects** | Spots bags or objects left unattended |
-| 📊 **Real-time Dashboard** | Live feed, FPS counter, alert feed, and session stats |
-| 💾 **Incident Recording** | Auto-saves frame snapshots when events are detected |
-| 📋 **Alert Log Export** | Export timestamped logs for reporting |
+|  **Violence Detection** | Detects physical altercations and aggressive contact |
+|  **Choking / Distress** | Identifies persons in respiratory or physical distress |
+|  **Camera Tampering** | Detects attempts to block, cover, or move the camera |
+|  **Restricted Area Intrusion** | Alerts when a person enters a defined restricted zone |
+|  **Loitering Detection** | Flags individuals lingering suspiciously in an area |
+|  **Unattended Objects** | Spots bags or objects left unattended |
+|  **Real-time Dashboard** | Live feed, FPS counter, alert feed, and session stats |
+|  **Incident Recording** | Auto-saves frame snapshots when events are detected |
+|  **Alert Log Export** | Export timestamped logs for reporting |
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 SecuroServ/
