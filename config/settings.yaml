@@ -1,0 +1,61 @@
+# SecuroServ Configuration
+# Modify these settings to tune detection behavior
+
+detection:
+  confidence_threshold: 0.45       # Minimum confidence for a detection to count (0.0 - 1.0)
+  iou_threshold: 0.45              # IoU threshold for NMS
+  model_path: "models/securoserv.pt"  # Path to custom trained weights
+  fallback_model: "yolov8n.pt"     # Fallback to pretrained if custom not found
+  inference_size: 640              # Input image size for YOLO
+
+camera:
+  device_index: 0                  # Camera device index (0 = default laptop camera)
+  frame_width: 1280
+  frame_height: 720
+  fps_target: 30
+
+alerts:
+  enable_sound: true
+  enable_popup: true
+  enable_log: true
+  cooldown_seconds: 5              # Minimum time between repeated alerts for same event
+  log_path: "logs/alerts.log"
+
+behaviors:
+  violence:
+    enabled: true
+    severity: "HIGH"
+    description: "Physical altercation or aggressive contact detected"
+  choking:
+    enabled: true
+    severity: "CRITICAL"
+    description: "Person appears to be choking or in respiratory distress"
+  camera_tampering:
+    enabled: true
+    severity: "HIGH"
+    description: "Attempt to block, move, or cover the surveillance camera"
+  restricted_area:
+    enabled: true
+    severity: "MEDIUM"
+    description: "Person has entered a restricted or unauthorized zone"
+  loitering:
+    enabled: true
+    severity: "LOW"
+    description: "Person has been stationary in a monitored area for extended time"
+  unattended_object:
+    enabled: true
+    severity: "MEDIUM"
+    description: "Unattended bag or object detected"
+
+recording:
+  auto_save_incidents: true
+  save_path: "logs/incidents/"
+  pre_incident_buffer_seconds: 5
+  post_incident_buffer_seconds: 10
+
+ui:
+  theme: "dark"
+  show_bounding_boxes: true
+  show_confidence: true
+  show_fps: true
+  show_heatmap: false

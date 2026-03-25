@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# YOLOv8 / PyTorch
+*.pt
+*.pth
+*.onnx
+*.engine
+runs/
+
+# Datasets (large — host separately or use .gitkeep)
+datasets/
+!datasets/.gitkeep
+
+# Logs and incidents
+logs/
+!logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.local
